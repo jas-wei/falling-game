@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://b88gtnrqrcb2"]
+
+[node name="TypeBar" type="Node2D"]
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="LineEdit" type="LineEdit" parent="Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = -0.048
+anchor_right = 0.133
+offset_top = 1.92
+offset_right = 126.68
+offset_bottom = 33.0
+text = "Type here! "

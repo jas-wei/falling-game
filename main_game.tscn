@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://ypwd6nymatfj"]
+
+[ext_resource type="Script" path="res://spawner.gd" id="1_hi2hh"]
+[ext_resource type="PackedScene" uid="uid://mine37dsyd5o" path="res://falling_block.tscn" id="2_0pyl1"]
+[ext_resource type="PackedScene" uid="uid://b88gtnrqrcb2" path="res://type_bar/type_bar.tscn" id="3_ikwcj"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_hi2hh")
+
+[node name="Node2D" parent="." instance=ExtResource("2_0pyl1")]
+
+[node name="Timer" type="Timer" parent="."]
+autostart = true
+
+[node name="TypeBar" parent="." instance=ExtResource("3_ikwcj")]
+position = Vector2(477, 525)
+scale = Vector2(1.5, 1.5)
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

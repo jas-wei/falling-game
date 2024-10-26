@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://engumidkbxkn"]
 
 [ext_resource type="Script" path="res://main_game.gd" id="1_ynsqx"]
-[ext_resource type="PackedScene" uid="uid://mine37dsyd5o" path="res://falling_block.tscn" id="2_jdrcd"]
+[ext_resource type="PackedScene" uid="uid://mine37dsyd5o" path="res://falling_block.tscn" id="2_ddoa7"]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_ynsqx")
@@ -14,6 +14,6 @@ position = Vector2(30, 30)
 scale = Vector2(2.7041, 13.5676)
 zoom = Vector2(0.2, 0.2)
 
-[node name="Node2D" parent="." instance=ExtResource("2_jdrcd")]
+[node name="Node2D" parent="." instance=ExtResource("2_ddoa7")]
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

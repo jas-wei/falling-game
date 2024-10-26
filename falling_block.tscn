@@ -1,4 +1,4 @@
-[gd_scene load_steps=3 format=3 uid="uid://v4pv664gs37h"]
+[gd_scene load_steps=3 format=3 uid="uid://mine37dsyd5o"]
 
 [ext_resource type="Texture2D" uid="uid://df56srtx0u1af" path="res://icon.svg" id="1_2v3hc"]
 
@@ -17,5 +17,3 @@ shape = SubResource("RectangleShape2D_4cysw")
 
 [node name="Sprite2D" type="Sprite2D" parent="RigidBody2D"]
 texture = ExtResource("1_2v3hc")
-
-[node name="Camera2D" type="Camera2D" parent="."]

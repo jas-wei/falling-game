@@ -7,12 +7,3 @@
 script = ExtResource("1_177aq")
 
 [node name="Node2D" parent="." instance=ExtResource("2_0pyl1")]
-visible = false
-
-[node name="Timer" type="Timer" parent="."]
-autostart = true
-
-[node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(166, 15)
-scale = Vector2(1.73532, 3.66251)
-zoom = Vector2(0.5, 0.5)

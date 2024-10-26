@@ -1,4 +1,4 @@
-[gd_scene load_steps=3 format=3 uid="uid://drdedjog48n0m"]
+[gd_scene load_steps=3 format=3 uid="uid://mine37dsyd5o"]
 
 [ext_resource type="Texture2D" uid="uid://df56srtx0u1af" path="res://icon.svg" id="1_2v3hc"]
 
@@ -9,7 +9,7 @@ size = Vector2(111, 109)
 
 [node name="RigidBody2D" type="RigidBody2D" parent="."]
 position = Vector2(1, -455)
-gravity_scale = 0.19
+gravity_scale = 0.09
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D"]
 position = Vector2(-1, 3)

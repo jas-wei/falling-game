@@ -7,13 +7,15 @@
 script = ExtResource("1_ynsqx")
 
 [node name="Timer" type="Timer" parent="."]
+wait_time = 2.0
 autostart = true
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(30, 30)
 scale = Vector2(2.7041, 13.5676)
-zoom = Vector2(0.2, 0.2)
+zoom = Vector2(0.5, 0.5)
 
 [node name="Node2D" parent="." instance=ExtResource("2_jdrcd")]
+position = Vector2(0, -331)
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

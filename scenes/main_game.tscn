@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://dplgrr4x8sptl"]
+
+[ext_resource type="Script" path="res://main_game.gd" id="1_177aq"]
+[ext_resource type="PackedScene" uid="uid://v4pv664gs37h" path="res://scenes/falling_block.tscn" id="2_0pyl1"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_177aq")
+
+[node name="Node2D" parent="." instance=ExtResource("2_0pyl1")]

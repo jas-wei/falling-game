@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://55g8g8kfhwus"]
+
+[ext_resource type="Script" path="res://spawner.gd" id="1_hi2hh"]
+[ext_resource type="PackedScene" uid="uid://mine37dsyd5o" path="res://falling_block.tscn" id="2_0pyl1"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_hi2hh")
+
+[node name="Node2D" parent="." instance=ExtResource("2_0pyl1")]
+
+[node name="Timer" type="Timer" parent="."]
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

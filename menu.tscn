@@ -31,6 +31,30 @@ text = "Instructions"
 layout_mode = 2
 text = "Quit"
 
+[node name="InstructionsPopup" type="Window" parent="."]
+title = "Instructions"
+initial_position = 1
+size = Vector2i(800, 400)
+
+[node name="Label" type="Label" parent="InstructionsPopup"]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Type the falling words before they reach the bottom. Each word typed correctly earns you points!"
+
+[node name="Back" type="Button" parent="InstructionsPopup"]
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -45.0
+offset_top = -31.0
+grow_horizontal = 0
+grow_vertical = 0
+text = "Back
+"
+
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Start" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Instructions" to="." method="_on_instructions_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Quit" to="." method="_on_quit_pressed"]
+[connection signal="pressed" from="InstructionsPopup/Back" to="." method="_on_back_pressed"]
